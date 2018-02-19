@@ -22,6 +22,8 @@ body {
 h1,
 h2,
 h3,
+h5,
+h6,
 p {
 	margin-bottom: 20px;
 }
@@ -32,7 +34,9 @@ p:last-child {
 
 h1,
 h2,
-h3 {
+h3,
+h5,
+h6 {
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	font-weight: 700;
 	color: #4aaaa5;
@@ -47,13 +51,21 @@ h1 {
 
 h2,
 h3 {
-	font-size: 22px;
+	font-size: 12px;
+}
+
+h5 {
+	font-size: 12px;
+}
+
+h6 {
+	font-size: 12px;
 }
 
 /*header*/
 
 #masthead {
-	position: fixed;
+  position: fixed;
   z-index: 99;
   width: 100%;
   margin: 0 0 30px;
@@ -83,7 +95,7 @@ nav {
 }
 
 nav a {
-	display: inline-block;
+  display: inline-block;
   padding-left: 15px;
   margin-left: 15px;
   line-height: 18px;
@@ -121,7 +133,7 @@ footer {
  border: 1px solid #ddd;
 }
 
-h3,
+h3, h5, h6,
 .sidebar h2 {
  padding-bottom: 20px;
  margin-bottom: 15px;
@@ -176,10 +188,24 @@ h3,
   opacity: 0.8;
 }
 
+
+#work1 img{
+  width: 587px;
+  border: 0 none;
+  opacity: 0.8;
+}
+.auth-image {
+  float: left;
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+  margin-right: 25px;
+}
+
 .work h3 {
   position: absolute;
   bottom: 20px;
-  width: 100%;
+  width: 95%;
   padding: 15px;
   margin-bottom: 0;
   font-weight: 300;
@@ -190,12 +216,35 @@ h3,
   border-bottom: 0;
 }
 
-.auth-image {
-  float: left;
-  width: 200px;
-  height: auto;
-  margin-top: 10px;
-  margin-right: 25px;
+.work h6 {
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 16px;
+  color: #fff;
+  text-align: center;
+  background: #4aaaa5;
+  border-bottom: 0px;
+}
+
+#work1 h5 {
+  overflow: auto;
+  clear: both;
+  position: relative;
+  bottom: 5px;
+  width: 100%;
+  padding: 5px;
+  left border: 0px;
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 16px;
+  color: #fff;
+  text-align: center;
+  background: #4aaaa5;
+  border-bottom: 0px;
 }
 
 	/* contact page */
